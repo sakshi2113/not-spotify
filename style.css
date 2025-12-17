@@ -1,0 +1,337 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: black;
+  color: #fff;
+  overflow: hidden;
+}
+.main {
+  display: flex;
+  height: 100vh; /*view point */
+  padding: 0.5rem;
+}
+.sidebar {
+  background-color: black;
+  width: 340px;
+  border-radius: 1rem; /*16px*/
+  margin-right: 0.5rem;
+}
+.main-content {
+  background-color: #121212;
+  flex: 1; /*all left place */
+  border-radius: 1rem;
+  overflow: auto;
+  padding: 0 1.5rem 0 1.5rem;
+}
+.music-player {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.nav {
+  background-color: #121212;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  padding: 0.5rem 0.75rem;
+}
+.nav-option {
+  line-height: 2.5rem;
+  opacity: 0.7;
+  padding: 0.5rem 0.75rem;
+}
+.nav-option:hover {
+  opacity: 1;
+}
+.nav-option i {
+  font-size: 1.25rem;
+}
+.nav-option a {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+.library {
+  background-color: #121212;
+  border-radius: 1rem;
+  height: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lib-option img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+.icons {
+  font-size: 1.25rem;
+  display: flex;
+}
+.icons img {
+  opacity: 0.7;
+  margin: 1rem;
+}
+.icons img :hover {
+  opacity: 1;
+}
+.box {
+  height: 8rem;
+  background-color: #232323;
+  border-radius: 0.75rem;
+  margin: 1.75rem 0 1.75rem 0;
+  padding: 0.5rem 1rem;
+}
+.box-p1 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.box-p2 {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+.badge {
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+  font-weight: 700;
+  padding: 0.25rem 1rem;
+  margin: 0.5rem;
+  height: 2rem;
+  width: fit-content;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background-color: #232323;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 2rem;
+  padding: 1rem;
+  z-index: 10;
+}
+.sticky-nav .badge,
+i {
+  margin-right: 2rem;
+  opacity: 0.7;
+}
+.sticky-nav i:hover {
+  opacity: 1;
+}
+
+.card {
+  background-color: #232323;
+  width: 150px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-left: 1.5rem;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.card-title {
+  font-weight: 600;
+}
+.card-info {
+  font-size: 0.85rem;
+  opacity: 0.5;
+}
+
+.footer {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line {
+  width: 90%;
+  height: 50%;
+  border-top: 1px solid white;
+  opacity: 0.4;
+}
+
+.music-player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.album {
+  flex: 1;
+}
+
+.player {
+  flex: 2;
+}
+
+.controls {
+  flex: 1;
+}
+
+.player-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-control-icon {
+  height: 1rem;
+  margin-right: 2rem;
+  opacity: 0.7;
+}
+#center-icon {
+  height: 2rem;
+  opacity: 1;
+}
+
+.player-control-icon:hover {
+  opacity: 1;
+}
+
+.playback-bar {
+  display: flex;
+  align-items: center;
+}
+.progress-bar {
+  width: 70%;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer; /*hand symbol*/
+}
+.progress-bar::-webkit-slider-runnable-track {
+  background-color: #ddd;
+  border-radius: 100px;
+  height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb {
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background-color: #1bd760;
+  border-radius: 50%;
+  margin-top: -6px;
+}
+
+.album {
+  display: flex;
+  align-items: center;
+}
+
+.album-img {
+  height: 3rem;
+  padding: 1rem;
+}
+
+.album-icon {
+  height: 2rem;
+  padding-left: 1rem;
+}
+.album-song {
+  font-size: 0.75rem;
+}
+.artist {
+  font-size: 0.6rem;
+}
+.album img,
+.album p {
+  opacity: 0.7;
+}
+.album img:hover,
+.album p:hover {
+  opacity: 1;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+.control-icon {
+  height: 1.5rem;
+  padding-left: 1.5rem;
+  opacity: 0.7;
+}
+.control-icon:hover {
+  opacity: 1;
+}
+
+.badge {
+  opacity: 0.8;
+  transition: 0.2s ease;
+}
+.badge:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Hide controls at small screens */
+@media (max-width: 1000px) {
+  .controls {
+    display: none;
+  }
+}
+
+/* Fix: use .sidebar instead of .side-bar */
+@media (max-width: 750px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+/* Hide album section on mobile */
+@media (max-width: 500px) {
+  .album {
+    display: none;
+  }
+}
+
+/* Card hover effect */
+.card {
+  transition: 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px rgba(145, 141, 141, 0.914);
+}
+
+/* Cursor default */
+h1,
+h2,
+a,
+p {
+  cursor: default;
+}
+
+/* FIX: avoid breaking layout */
+.card-img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1150px) {
+  #nav-msg {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .premium {
+    display: none;
+  }
+}
