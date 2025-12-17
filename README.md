@@ -36,3 +36,9 @@ This project recreates the look and feel of Spotify’s web player with a modern
 ---
 
 ## 📁 Project Structure
+spotify-clone/
+├── index.html
+├── style.css
+├── assets/
+│ ├── images
+│ └── icons
