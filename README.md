@@ -6,7 +6,7 @@ This project recreates the look and feel of Spotify’s web player with a modern
 ---
 
 ## 🚀 Live Demo
-🔗 https://sakshi2113.github.io/spotify-clone/
+🔗 https://sakshi2113.github.io/not-spotify/
 
 ---
 
